@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tasheel/ViewControllers/SplashViewController.swift"
+            timestampString = "586646737.3483109"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Tasheel.SplashViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Tasheel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abednayefqasim/Projects/IOS%20Project/Tasheel/Tasheel/ViewControllers/SplashViewController.swift"
+                  timestampString = "586617225.3701299"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Tasheel.SplashViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Tasheel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abednayefqasim/Projects/IOS%20Project/Tasheel/Tasheel/ViewControllers/SplashViewController.swift"
+                  timestampString = "586617225.374541"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "694">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

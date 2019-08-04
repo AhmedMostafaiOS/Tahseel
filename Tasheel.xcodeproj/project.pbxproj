@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C5FCE10F4DAB5B11CBC923E /* Pods_Tasheel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A991DBBDF68575C56A387A /* Pods_Tasheel.framework */; };
+		D108769622F6B0EB00ADDC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769522F6B0EB00ADDC69 /* AppDelegate.swift */; };
+		D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769722F6B0EB00ADDC69 /* SplashViewController.swift */; };
+		D108769B22F6B0EB00ADDC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D108769922F6B0EB00ADDC69 /* Main.storyboard */; };
+		D108769E22F6B0EB00ADDC69 /* Tasheel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D108769C22F6B0EB00ADDC69 /* Tasheel.xcdatamodeld */; };
+		D10876A322F6B0ED00ADDC69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10876A122F6B0ED00ADDC69 /* LaunchScreen.storyboard */; };
+		D10876AE22F6B0ED00ADDC69 /* TasheelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10876AD22F6B0ED00ADDC69 /* TasheelTests.swift */; };
+		D10876B922F6B0ED00ADDC69 /* TasheelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10876B822F6B0ED00ADDC69 /* TasheelUITests.swift */; };
+		D154C0F622F7103E00503C98 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C0F522F7103E00503C98 /* ChooseViewController.swift */; };
+		D154C0F822F7104900503C98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C0F722F7104900503C98 /* LoginViewController.swift */; };
+		D154C0FA22F7105700503C98 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C0F922F7105700503C98 /* SignUpViewController.swift */; };
+		D154C0FC22F717C600503C98 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C0FB22F717C600503C98 /* BaseViewController.swift */; };
+		D154C0FF22F71CC400503C98 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C0FE22F71CC400503C98 /* Helper.swift */; };
+		D154C10122F7208100503C98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D154C10022F7208100503C98 /* GoogleService-Info.plist */; };
+		D154C10722F721BA00503C98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C10622F721BA00503C98 /* User.swift */; };
+		D1FAA02E22F75FB5001455D9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA02D22F75FB5001455D9 /* AuthService.swift */; };
+		D1FAA03722F767A2001455D9 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */; };
+		D1FAA03822F767A2001455D9 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */; };
+		D1FAA03C22F767A2001455D9 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03622F767A2001455D9 /* UIViewControllerExtensions.swift */; };
+		D1FAA03F22F76895001455D9 /* NavigationbarItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03E22F76894001455D9 /* NavigationbarItemsViewController.swift */; };
+		D1FAA04122F76915001455D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA04022F76915001455D9 /* HomeViewController.swift */; };
+		D1FAA04322F769FB001455D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1FAA04222F769FA001455D9 /* Assets.xcassets */; };
+		D1FAA04822F76A49001455D9 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FAA04722F76A49001455D9 /* CategoryCell.xib */; };
+		D1FAA04A22F76AE8001455D9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA04922F76AE8001455D9 /* CategoryCell.swift */; };
+		D1FAA04C22F76BE6001455D9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA04B22F76BE6001455D9 /* Category.swift */; };
+		D1FAA05022F77286001455D9 /* ProductGourpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FAA04F22F77286001455D9 /* ProductGourpCell.xib */; };
+		D1FAA05222F77296001455D9 /* ProductGourpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA05122F77296001455D9 /* ProductGourpCell.swift */; };
+		D1FAA05422F77372001455D9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA05322F77372001455D9 /* Product.swift */; };
+		D1FAA05722F773ED001455D9 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FAA05622F773ED001455D9 /* ProductCell.xib */; };
+		D1FAA05922F77528001455D9 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA05822F77528001455D9 /* ProductCell.swift */; };
+		D1FAA05B22F77619001455D9 /* ProductGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA05A22F77619001455D9 /* ProductGroup.swift */; };
+		D1FAA05E22F77FF7001455D9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA05D22F77FF7001455D9 /* MenuViewController.swift */; };
+		D1FAA06122F78055001455D9 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FAA06022F78055001455D9 /* SideMenuCell.xib */; };
+		D1FAA06322F78096001455D9 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA06222F78096001455D9 /* SideMenuCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10876AA22F6B0ED00ADDC69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D108768A22F6B0EB00ADDC69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D108769122F6B0EB00ADDC69;
+			remoteInfo = Tasheel;
+		};
+		D10876B522F6B0ED00ADDC69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D108768A22F6B0EB00ADDC69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D108769122F6B0EB00ADDC69;
+			remoteInfo = Tasheel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1258C4DE1A4B4048C76015B4 /* Pods-Tasheel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasheel.debug.xcconfig"; path = "Target Support Files/Pods-Tasheel/Pods-Tasheel.debug.xcconfig"; sourceTree = "<group>"; };
+		78D17CACB2DED63C4E99C6D1 /* Pods-Tasheel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasheel.release.xcconfig"; path = "Target Support Files/Pods-Tasheel/Pods-Tasheel.release.xcconfig"; sourceTree = "<group>"; };
+		A3A991DBBDF68575C56A387A /* Pods_Tasheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D108769222F6B0EB00ADDC69 /* Tasheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D108769522F6B0EB00ADDC69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D108769722F6B0EB00ADDC69 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D108769A22F6B0EB00ADDC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D108769D22F6B0EB00ADDC69 /* Tasheel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasheel.xcdatamodel; sourceTree = "<group>"; };
+		D10876A222F6B0ED00ADDC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D10876A422F6B0ED00ADDC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10876A922F6B0ED00ADDC69 /* TasheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10876AD22F6B0ED00ADDC69 /* TasheelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasheelTests.swift; sourceTree = "<group>"; };
+		D10876AF22F6B0ED00ADDC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10876B422F6B0ED00ADDC69 /* TasheelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasheelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10876B822F6B0ED00ADDC69 /* TasheelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasheelUITests.swift; sourceTree = "<group>"; };
+		D10876BA22F6B0ED00ADDC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D154C0F522F7103E00503C98 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		D154C0F722F7104900503C98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D154C0F922F7105700503C98 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D154C0FB22F717C600503C98 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D154C0FE22F71CC400503C98 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D154C10022F7208100503C98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D154C10622F721BA00503C98 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1FAA02D22F75FB5001455D9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
+		D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
+		D1FAA03622F767A2001455D9 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		D1FAA03E22F76894001455D9 /* NavigationbarItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationbarItemsViewController.swift; sourceTree = "<group>"; };
+		D1FAA04022F76915001455D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D1FAA04222F769FA001455D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1FAA04722F76A49001455D9 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		D1FAA04922F76AE8001455D9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		D1FAA04B22F76BE6001455D9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D1FAA04F22F77286001455D9 /* ProductGourpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductGourpCell.xib; sourceTree = "<group>"; };
+		D1FAA05122F77296001455D9 /* ProductGourpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGourpCell.swift; sourceTree = "<group>"; };
+		D1FAA05322F77372001455D9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D1FAA05622F773ED001455D9 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		D1FAA05822F77528001455D9 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		D1FAA05A22F77619001455D9 /* ProductGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGroup.swift; sourceTree = "<group>"; };
+		D1FAA05D22F77FF7001455D9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D1FAA06022F78055001455D9 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		D1FAA06222F78096001455D9 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D108768F22F6B0EB00ADDC69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5FCE10F4DAB5B11CBC923E /* Pods_Tasheel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10876A622F6B0ED00ADDC69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10876B122F6B0ED00ADDC69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21C4E97A361D9CD2BEC9CCC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3A991DBBDF68575C56A387A /* Pods_Tasheel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E35EA6C658C4ED7E42B2804 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1258C4DE1A4B4048C76015B4 /* Pods-Tasheel.debug.xcconfig */,
+				78D17CACB2DED63C4E99C6D1 /* Pods-Tasheel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D108768922F6B0EB00ADDC69 = {
+			isa = PBXGroup;
+			children = (
+				D108769422F6B0EB00ADDC69 /* Tasheel */,
+				D10876AC22F6B0ED00ADDC69 /* TasheelTests */,
+				D10876B722F6B0ED00ADDC69 /* TasheelUITests */,
+				D108769322F6B0EB00ADDC69 /* Products */,
+				5E35EA6C658C4ED7E42B2804 /* Pods */,
+				21C4E97A361D9CD2BEC9CCC8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D108769322F6B0EB00ADDC69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D108769222F6B0EB00ADDC69 /* Tasheel.app */,
+				D10876A922F6B0ED00ADDC69 /* TasheelTests.xctest */,
+				D10876B422F6B0ED00ADDC69 /* TasheelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D108769422F6B0EB00ADDC69 /* Tasheel */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA04422F76A24001455D9 /* View */,
+				D1FAA02F22F76772001455D9 /* Resourses */,
+				D154C10022F7208100503C98 /* GoogleService-Info.plist */,
+				D154C10522F721AD00503C98 /* Model */,
+				D154C0FD22F71CB400503C98 /* Helpers */,
+				D154C0F422F7102400503C98 /* ViewControllers */,
+				D108769522F6B0EB00ADDC69 /* AppDelegate.swift */,
+				D108769922F6B0EB00ADDC69 /* Main.storyboard */,
+				D10876A122F6B0ED00ADDC69 /* LaunchScreen.storyboard */,
+				D1FAA04222F769FA001455D9 /* Assets.xcassets */,
+				D10876A422F6B0ED00ADDC69 /* Info.plist */,
+				D108769C22F6B0EB00ADDC69 /* Tasheel.xcdatamodeld */,
+			);
+			path = Tasheel;
+			sourceTree = "<group>";
+		};
+		D10876AC22F6B0ED00ADDC69 /* TasheelTests */ = {
+			isa = PBXGroup;
+			children = (
+				D10876AD22F6B0ED00ADDC69 /* TasheelTests.swift */,
+				D10876AF22F6B0ED00ADDC69 /* Info.plist */,
+			);
+			path = TasheelTests;
+			sourceTree = "<group>";
+		};
+		D10876B722F6B0ED00ADDC69 /* TasheelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D10876B822F6B0ED00ADDC69 /* TasheelUITests.swift */,
+				D10876BA22F6B0ED00ADDC69 /* Info.plist */,
+			);
+			path = TasheelUITests;
+			sourceTree = "<group>";
+		};
+		D154C0F422F7102400503C98 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D108769722F6B0EB00ADDC69 /* SplashViewController.swift */,
+				D154C0F522F7103E00503C98 /* ChooseViewController.swift */,
+				D154C0F722F7104900503C98 /* LoginViewController.swift */,
+				D154C0F922F7105700503C98 /* SignUpViewController.swift */,
+				D154C0FB22F717C600503C98 /* BaseViewController.swift */,
+				D1FAA04022F76915001455D9 /* HomeViewController.swift */,
+				D1FAA05D22F77FF7001455D9 /* MenuViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D154C0FD22F71CB400503C98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D154C0FE22F71CC400503C98 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D154C10222F7215300503C98 /* FirebaseManeger */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA02D22F75FB5001455D9 /* AuthService.swift */,
+			);
+			path = FirebaseManeger;
+			sourceTree = "<group>";
+		};
+		D154C10522F721AD00503C98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D154C10622F721BA00503C98 /* User.swift */,
+				D1FAA04B22F76BE6001455D9 /* Category.swift */,
+				D1FAA05322F77372001455D9 /* Product.swift */,
+				D1FAA05A22F77619001455D9 /* ProductGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1FAA02F22F76772001455D9 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA03D22F76871001455D9 /* CustomView */,
+				D1FAA03022F76784001455D9 /* Extensions */,
+				D154C10222F7215300503C98 /* FirebaseManeger */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		D1FAA03022F76784001455D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */,
+				D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */,
+				D1FAA03622F767A2001455D9 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D1FAA03D22F76871001455D9 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA03E22F76894001455D9 /* NavigationbarItemsViewController.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		D1FAA04422F76A24001455D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA04D22F7709B001455D9 /* TableView */,
+				D1FAA04522F76A2C001455D9 /* CollectionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1FAA04522F76A2C001455D9 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA05522F773D8001455D9 /* ProductCell */,
+				D1FAA04622F76A35001455D9 /* CategoryCell */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		D1FAA04622F76A35001455D9 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA04722F76A49001455D9 /* CategoryCell.xib */,
+				D1FAA04922F76AE8001455D9 /* CategoryCell.swift */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		D1FAA04D22F7709B001455D9 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA05F22F78048001455D9 /* SideMenuCell */,
+				D1FAA04E22F770A3001455D9 /* ProductGourpCell */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		D1FAA04E22F770A3001455D9 /* ProductGourpCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA04F22F77286001455D9 /* ProductGourpCell.xib */,
+				D1FAA05122F77296001455D9 /* ProductGourpCell.swift */,
+			);
+			path = ProductGourpCell;
+			sourceTree = "<group>";
+		};
+		D1FAA05522F773D8001455D9 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA05622F773ED001455D9 /* ProductCell.xib */,
+				D1FAA05822F77528001455D9 /* ProductCell.swift */,
+			);
+			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		D1FAA05F22F78048001455D9 /* SideMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAA06022F78055001455D9 /* SideMenuCell.xib */,
+				D1FAA06222F78096001455D9 /* SideMenuCell.swift */,
+			);
+			path = SideMenuCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D108769122F6B0EB00ADDC69 /* Tasheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10876BD22F6B0ED00ADDC69 /* Build configuration list for PBXNativeTarget "Tasheel" */;
+			buildPhases = (
+				A79FFDC424B90C0B616EED94 /* [CP] Check Pods Manifest.lock */,
+				D108768E22F6B0EB00ADDC69 /* Sources */,
+				D108768F22F6B0EB00ADDC69 /* Frameworks */,
+				D108769022F6B0EB00ADDC69 /* Resources */,
+				A814B986B3C91EF8BDD88969 /* [CP] Embed Pods Frameworks */,
+				D8F0CADA4BE538961D9FA1DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tasheel;
+			productName = Tasheel;
+			productReference = D108769222F6B0EB00ADDC69 /* Tasheel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D10876A822F6B0ED00ADDC69 /* TasheelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10876C022F6B0ED00ADDC69 /* Build configuration list for PBXNativeTarget "TasheelTests" */;
+			buildPhases = (
+				D10876A522F6B0ED00ADDC69 /* Sources */,
+				D10876A622F6B0ED00ADDC69 /* Frameworks */,
+				D10876A722F6B0ED00ADDC69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10876AB22F6B0ED00ADDC69 /* PBXTargetDependency */,
+			);
+			name = TasheelTests;
+			productName = TasheelTests;
+			productReference = D10876A922F6B0ED00ADDC69 /* TasheelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D10876B322F6B0ED00ADDC69 /* TasheelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10876C322F6B0ED00ADDC69 /* Build configuration list for PBXNativeTarget "TasheelUITests" */;
+			buildPhases = (
+				D10876B022F6B0ED00ADDC69 /* Sources */,
+				D10876B122F6B0ED00ADDC69 /* Frameworks */,
+				D10876B222F6B0ED00ADDC69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10876B622F6B0ED00ADDC69 /* PBXTargetDependency */,
+			);
+			name = TasheelUITests;
+			productName = TasheelUITests;
+			productReference = D10876B422F6B0ED00ADDC69 /* TasheelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D108768A22F6B0EB00ADDC69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Abed Nayef Qasim";
+				TargetAttributes = {
+					D108769122F6B0EB00ADDC69 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					D10876A822F6B0ED00ADDC69 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = D108769122F6B0EB00ADDC69;
+					};
+					D10876B322F6B0ED00ADDC69 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = D108769122F6B0EB00ADDC69;
+					};
+				};
+			};
+			buildConfigurationList = D108768D22F6B0EB00ADDC69 /* Build configuration list for PBXProject "Tasheel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D108768922F6B0EB00ADDC69;
+			productRefGroup = D108769322F6B0EB00ADDC69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D108769122F6B0EB00ADDC69 /* Tasheel */,
+				D10876A822F6B0ED00ADDC69 /* TasheelTests */,
+				D10876B322F6B0ED00ADDC69 /* TasheelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D108769022F6B0EB00ADDC69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1FAA04822F76A49001455D9 /* CategoryCell.xib in Resources */,
+				D10876A322F6B0ED00ADDC69 /* LaunchScreen.storyboard in Resources */,
+				D1FAA05722F773ED001455D9 /* ProductCell.xib in Resources */,
+				D1FAA06122F78055001455D9 /* SideMenuCell.xib in Resources */,
+				D154C10122F7208100503C98 /* GoogleService-Info.plist in Resources */,
+				D1FAA04322F769FB001455D9 /* Assets.xcassets in Resources */,
+				D108769B22F6B0EB00ADDC69 /* Main.storyboard in Resources */,
+				D1FAA05022F77286001455D9 /* ProductGourpCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10876A722F6B0ED00ADDC69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10876B222F6B0ED00ADDC69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A79FFDC424B90C0B616EED94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tasheel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A814B986B3C91EF8BDD88969 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tasheel/Pods-Tasheel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tasheel/Pods-Tasheel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tasheel/Pods-Tasheel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F0CADA4BE538961D9FA1DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tasheel/Pods-Tasheel-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tasheel/Pods-Tasheel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tasheel/Pods-Tasheel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D108768E22F6B0EB00ADDC69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1FAA05422F77372001455D9 /* Product.swift in Sources */,
+				D1FAA03C22F767A2001455D9 /* UIViewControllerExtensions.swift in Sources */,
+				D154C0FA22F7105700503C98 /* SignUpViewController.swift in Sources */,
+				D1FAA03722F767A2001455D9 /* CollectionViewExtensions.swift in Sources */,
+				D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */,
+				D154C0F622F7103E00503C98 /* ChooseViewController.swift in Sources */,
+				D1FAA04122F76915001455D9 /* HomeViewController.swift in Sources */,
+				D108769E22F6B0EB00ADDC69 /* Tasheel.xcdatamodeld in Sources */,
+				D154C0F822F7104900503C98 /* LoginViewController.swift in Sources */,
+				D154C0FC22F717C600503C98 /* BaseViewController.swift in Sources */,
+				D1FAA05B22F77619001455D9 /* ProductGroup.swift in Sources */,
+				D108769622F6B0EB00ADDC69 /* AppDelegate.swift in Sources */,
+				D1FAA03F22F76895001455D9 /* NavigationbarItemsViewController.swift in Sources */,
+				D1FAA05222F77296001455D9 /* ProductGourpCell.swift in Sources */,
+				D1FAA04C22F76BE6001455D9 /* Category.swift in Sources */,
+				D1FAA05E22F77FF7001455D9 /* MenuViewController.swift in Sources */,
+				D1FAA04A22F76AE8001455D9 /* CategoryCell.swift in Sources */,
+				D1FAA02E22F75FB5001455D9 /* AuthService.swift in Sources */,
+				D154C10722F721BA00503C98 /* User.swift in Sources */,
+				D1FAA05922F77528001455D9 /* ProductCell.swift in Sources */,
+				D154C0FF22F71CC400503C98 /* Helper.swift in Sources */,
+				D1FAA03822F767A2001455D9 /* TableViewExtensions.swift in Sources */,
+				D1FAA06322F78096001455D9 /* SideMenuCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10876A522F6B0ED00ADDC69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10876AE22F6B0ED00ADDC69 /* TasheelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10876B022F6B0ED00ADDC69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10876B922F6B0ED00ADDC69 /* TasheelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D10876AB22F6B0ED00ADDC69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D108769122F6B0EB00ADDC69 /* Tasheel */;
+			targetProxy = D10876AA22F6B0ED00ADDC69 /* PBXContainerItemProxy */;
+		};
+		D10876B622F6B0ED00ADDC69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D108769122F6B0EB00ADDC69 /* Tasheel */;
+			targetProxy = D10876B522F6B0ED00ADDC69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D108769922F6B0EB00ADDC69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D108769A22F6B0EB00ADDC69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D10876A122F6B0ED00ADDC69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D10876A222F6B0ED00ADDC69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D10876BB22F6B0ED00ADDC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D10876BC22F6B0ED00ADDC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D10876BE22F6B0ED00ADDC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1258C4DE1A4B4048C76015B4 /* Pods-Tasheel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S727WZ5BQT;
+				INFOPLIST_FILE = Tasheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.Tasheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D10876BF22F6B0ED00ADDC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D17CACB2DED63C4E99C6D1 /* Pods-Tasheel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S727WZ5BQT;
+				INFOPLIST_FILE = Tasheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.Tasheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D10876C122F6B0ED00ADDC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S727WZ5BQT;
+				INFOPLIST_FILE = TasheelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.TasheelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tasheel.app/Tasheel";
+			};
+			name = Debug;
+		};
+		D10876C222F6B0ED00ADDC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S727WZ5BQT;
+				INFOPLIST_FILE = TasheelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.TasheelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tasheel.app/Tasheel";
+			};
+			name = Release;
+		};
+		D10876C422F6B0ED00ADDC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S727WZ5BQT;
+				INFOPLIST_FILE = TasheelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.TasheelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tasheel;
+			};
+			name = Debug;
+		};
+		D10876C522F6B0ED00ADDC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S727WZ5BQT;
+				INFOPLIST_FILE = TasheelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.TasheelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tasheel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D108768D22F6B0EB00ADDC69 /* Build configuration list for PBXProject "Tasheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10876BB22F6B0ED00ADDC69 /* Debug */,
+				D10876BC22F6B0ED00ADDC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10876BD22F6B0ED00ADDC69 /* Build configuration list for PBXNativeTarget "Tasheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10876BE22F6B0ED00ADDC69 /* Debug */,
+				D10876BF22F6B0ED00ADDC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10876C022F6B0ED00ADDC69 /* Build configuration list for PBXNativeTarget "TasheelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10876C122F6B0ED00ADDC69 /* Debug */,
+				D10876C222F6B0ED00ADDC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10876C322F6B0ED00ADDC69 /* Build configuration list for PBXNativeTarget "TasheelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10876C422F6B0ED00ADDC69 /* Debug */,
+				D10876C522F6B0ED00ADDC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D108769C22F6B0EB00ADDC69 /* Tasheel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D108769D22F6B0EB00ADDC69 /* Tasheel.xcdatamodel */,
+			);
+			currentVersion = D108769D22F6B0EB00ADDC69 /* Tasheel.xcdatamodel */;
+			path = Tasheel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D108768A22F6B0EB00ADDC69 /* Project object */;
+}

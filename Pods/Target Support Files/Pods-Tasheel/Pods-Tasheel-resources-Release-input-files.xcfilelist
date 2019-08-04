@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Tasheel/Pods-Tasheel-resources.sh
+${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle
+${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle
+${PODS_ROOT}/ZDCChat/ZDCChatStrings.bundle
+${PODS_ROOT}/ZDCChat/ZDCChat.bundle
