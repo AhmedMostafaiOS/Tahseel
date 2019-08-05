@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C5FCE10F4DAB5B11CBC923E /* Pods_Tasheel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A991DBBDF68575C56A387A /* Pods_Tasheel.framework */; };
+		D106375722F8091F0042FD07 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106375622F8091F0042FD07 /* TextField.swift */; };
 		D108769622F6B0EB00ADDC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769522F6B0EB00ADDC69 /* AppDelegate.swift */; };
 		D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769722F6B0EB00ADDC69 /* SplashViewController.swift */; };
 		D108769B22F6B0EB00ADDC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D108769922F6B0EB00ADDC69 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		1258C4DE1A4B4048C76015B4 /* Pods-Tasheel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasheel.debug.xcconfig"; path = "Target Support Files/Pods-Tasheel/Pods-Tasheel.debug.xcconfig"; sourceTree = "<group>"; };
 		78D17CACB2DED63C4E99C6D1 /* Pods-Tasheel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasheel.release.xcconfig"; path = "Target Support Files/Pods-Tasheel/Pods-Tasheel.release.xcconfig"; sourceTree = "<group>"; };
 		A3A991DBBDF68575C56A387A /* Pods_Tasheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D106375622F8091F0042FD07 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		D108769222F6B0EB00ADDC69 /* Tasheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D108769522F6B0EB00ADDC69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D108769722F6B0EB00ADDC69 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */,
 				D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */,
 				D1FAA03622F767A2001455D9 /* UIViewControllerExtensions.swift */,
+				D106375622F8091F0042FD07 /* TextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				D1FAA05422F77372001455D9 /* Product.swift in Sources */,
 				D1FAA03C22F767A2001455D9 /* UIViewControllerExtensions.swift in Sources */,
 				D154C0FA22F7105700503C98 /* SignUpViewController.swift in Sources */,
+				D106375722F8091F0042FD07 /* TextField.swift in Sources */,
 				D1FAA03722F767A2001455D9 /* CollectionViewExtensions.swift in Sources */,
 				D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */,
 				D154C0F622F7103E00503C98 /* ChooseViewController.swift in Sources */,

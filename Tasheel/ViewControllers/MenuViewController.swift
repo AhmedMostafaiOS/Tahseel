@@ -37,9 +37,8 @@ class MenuViewController: UIViewController {
 }
 extension MenuViewController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuList.count
+        return menuList.count 
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:SideMenuCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         cell.titleLabel.text = menuList[indexPath.row]
