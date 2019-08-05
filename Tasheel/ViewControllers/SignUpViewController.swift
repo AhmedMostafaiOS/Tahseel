@@ -23,6 +23,10 @@ class SignUpViewController: BaseViewController {
         nameTextField.addBorder()
     }
     
+    @IBAction func View(_ sender: Any) {
+        passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
+    }
+    
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

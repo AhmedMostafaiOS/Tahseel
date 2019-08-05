@@ -21,7 +21,6 @@ class SideMenuCell: UITableViewCell {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         layoutMargins = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
     }
 

@@ -41,6 +41,8 @@ extension MenuViewController:UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:SideMenuCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+        
+        cell.backgroundColor = indexPath.row % 2 == 0 ? #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 0.3):#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         cell.titleLabel.text = menuList[indexPath.row]
         return cell
     }

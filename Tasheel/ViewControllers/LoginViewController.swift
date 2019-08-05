@@ -29,6 +29,11 @@ class LoginViewController: BaseViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func View(_ sender: Any) {
+        passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
+    }
+    
+    
     @IBAction func Login(_ sender: Any) {
         if (!validation()){
             alert(message: errors)

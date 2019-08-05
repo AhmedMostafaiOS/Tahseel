@@ -42,7 +42,7 @@ class NavigationbarItemsViewController: UIViewController, UNUserNotificationCent
         self.navigationController?.navigationBar.addSubview(logo)
         self.navigationController?.navigationBar.isTranslucent = false
     }
-    func updateImageToLabel(message:String, width:Float = 79.19) {
+    func updateImageToLabel(message:String, width:Float = 120) {
         for item in navigationController?.navigationBar.subviews ?? [] {
             if item.isKind(of: UIImageView.self) ||  item.isKind(of: UILabel.self) {
                 item.removeFromSuperview()

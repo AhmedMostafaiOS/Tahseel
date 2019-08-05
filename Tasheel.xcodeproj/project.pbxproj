@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5C5FCE10F4DAB5B11CBC923E /* Pods_Tasheel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A991DBBDF68575C56A387A /* Pods_Tasheel.framework */; };
+		D104D4C422F8A9B6002580A0 /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D104D4C322F8A9B6002580A0 /* ColorCell.xib */; };
+		D104D4C622F8A9F1002580A0 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104D4C522F8A9F1002580A0 /* ColorCell.swift */; };
+		D104D4C822F8B277002580A0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104D4C722F8B277002580A0 /* DetailViewController.swift */; };
+		D104D4CB22F8B31D002580A0 /* SizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D104D4CA22F8B31D002580A0 /* SizeCell.xib */; };
+		D104D4CD22F8B393002580A0 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104D4CC22F8B393002580A0 /* SizeCell.swift */; };
 		D106375722F8091F0042FD07 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106375622F8091F0042FD07 /* TextField.swift */; };
+		D106375E22F83F3F0042FD07 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106375D22F83F3E0042FD07 /* ListViewController.swift */; };
 		D108769622F6B0EB00ADDC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769522F6B0EB00ADDC69 /* AppDelegate.swift */; };
 		D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769722F6B0EB00ADDC69 /* SplashViewController.swift */; };
 		D108769B22F6B0EB00ADDC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D108769922F6B0EB00ADDC69 /* Main.storyboard */; };
@@ -65,7 +71,13 @@
 		1258C4DE1A4B4048C76015B4 /* Pods-Tasheel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasheel.debug.xcconfig"; path = "Target Support Files/Pods-Tasheel/Pods-Tasheel.debug.xcconfig"; sourceTree = "<group>"; };
 		78D17CACB2DED63C4E99C6D1 /* Pods-Tasheel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasheel.release.xcconfig"; path = "Target Support Files/Pods-Tasheel/Pods-Tasheel.release.xcconfig"; sourceTree = "<group>"; };
 		A3A991DBBDF68575C56A387A /* Pods_Tasheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D104D4C322F8A9B6002580A0 /* ColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
+		D104D4C522F8A9F1002580A0 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		D104D4C722F8B277002580A0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D104D4CA22F8B31D002580A0 /* SizeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeCell.xib; sourceTree = "<group>"; };
+		D104D4CC22F8B393002580A0 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
 		D106375622F8091F0042FD07 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		D106375D22F83F3E0042FD07 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D108769222F6B0EB00ADDC69 /* Tasheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D108769522F6B0EB00ADDC69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D108769722F6B0EB00ADDC69 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +162,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D104D4C222F8A9A0002580A0 /* ColorCell */ = {
+			isa = PBXGroup;
+			children = (
+				D104D4C322F8A9B6002580A0 /* ColorCell.xib */,
+				D104D4C522F8A9F1002580A0 /* ColorCell.swift */,
+			);
+			path = ColorCell;
+			sourceTree = "<group>";
+		};
+		D104D4C922F8B313002580A0 /* SizeCell */ = {
+			isa = PBXGroup;
+			children = (
+				D104D4CA22F8B31D002580A0 /* SizeCell.xib */,
+				D104D4CC22F8B393002580A0 /* SizeCell.swift */,
+			);
+			path = SizeCell;
+			sourceTree = "<group>";
+		};
 		D108768922F6B0EB00ADDC69 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +249,8 @@
 				D154C0FB22F717C600503C98 /* BaseViewController.swift */,
 				D1FAA04022F76915001455D9 /* HomeViewController.swift */,
 				D1FAA05D22F77FF7001455D9 /* MenuViewController.swift */,
+				D106375D22F83F3E0042FD07 /* ListViewController.swift */,
+				D104D4C722F8B277002580A0 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -291,6 +323,8 @@
 		D1FAA04522F76A2C001455D9 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				D104D4C922F8B313002580A0 /* SizeCell */,
+				D104D4C222F8A9A0002580A0 /* ColorCell */,
 				D1FAA05522F773D8001455D9 /* ProductCell */,
 				D1FAA04622F76A35001455D9 /* CategoryCell */,
 			);
@@ -452,6 +486,8 @@
 				D1FAA04822F76A49001455D9 /* CategoryCell.xib in Resources */,
 				D10876A322F6B0ED00ADDC69 /* LaunchScreen.storyboard in Resources */,
 				D1FAA05722F773ED001455D9 /* ProductCell.xib in Resources */,
+				D104D4C422F8A9B6002580A0 /* ColorCell.xib in Resources */,
+				D104D4CB22F8B31D002580A0 /* SizeCell.xib in Resources */,
 				D1FAA06122F78055001455D9 /* SideMenuCell.xib in Resources */,
 				D154C10122F7208100503C98 /* GoogleService-Info.plist in Resources */,
 				D1FAA04322F769FB001455D9 /* Assets.xcassets in Resources */,
@@ -548,8 +584,11 @@
 				D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */,
 				D154C0F622F7103E00503C98 /* ChooseViewController.swift in Sources */,
 				D1FAA04122F76915001455D9 /* HomeViewController.swift in Sources */,
+				D106375E22F83F3F0042FD07 /* ListViewController.swift in Sources */,
+				D104D4C822F8B277002580A0 /* DetailViewController.swift in Sources */,
 				D108769E22F6B0EB00ADDC69 /* Tasheel.xcdatamodeld in Sources */,
 				D154C0F822F7104900503C98 /* LoginViewController.swift in Sources */,
+				D104D4C622F8A9F1002580A0 /* ColorCell.swift in Sources */,
 				D154C0FC22F717C600503C98 /* BaseViewController.swift in Sources */,
 				D1FAA05B22F77619001455D9 /* ProductGroup.swift in Sources */,
 				D108769622F6B0EB00ADDC69 /* AppDelegate.swift in Sources */,
@@ -561,6 +600,7 @@
 				D1FAA02E22F75FB5001455D9 /* AuthService.swift in Sources */,
 				D154C10722F721BA00503C98 /* User.swift in Sources */,
 				D1FAA05922F77528001455D9 /* ProductCell.swift in Sources */,
+				D104D4CD22F8B393002580A0 /* SizeCell.swift in Sources */,
 				D154C0FF22F71CC400503C98 /* Helper.swift in Sources */,
 				D1FAA03822F767A2001455D9 /* TableViewExtensions.swift in Sources */,
 				D1FAA06322F78096001455D9 /* SideMenuCell.swift in Sources */,

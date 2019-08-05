@@ -23,6 +23,7 @@ class HomeViewController: NavigationbarItemsViewController {
         productCollectionTabelView.rowHeight = UITableView.automaticDimension
         setup()
     }
+    
     func setup() {
         categoryList.append(Category.init(name: "Woman", color: #colorLiteral(red: 0.4, green: 0.4941176471, blue: 0.9176470588, alpha: 0.7), image: #imageLiteral(resourceName: "womanImage")))
         categoryList.append(Category.init(name: "Man", color: #colorLiteral(red: 1, green: 0.3450980392, blue: 0.3450980392, alpha: 0.7), image: #imageLiteral(resourceName: "manImage")))
@@ -40,6 +41,8 @@ class HomeViewController: NavigationbarItemsViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateImageToLabel(message: "Home")
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 }
 extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
@@ -51,6 +54,10 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
         let cell:ProductGourpCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(title: productGroupList[indexPath.row].title, productList: productGroupList[indexPath.row].productList)
         cell.configureCell()
+        cell.didSelectItemCollectionView = { index in
+            let vc = Helper.initViewControllerWith(identifier: "ListViewController", and: "")
+            self.show(vc, sender: nil)
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -67,6 +74,7 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:CategoryCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(image: categoryList[indexPath.row].image, color: categoryList[indexPath.row].color, name: categoryList[indexPath.row].name)
+        
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

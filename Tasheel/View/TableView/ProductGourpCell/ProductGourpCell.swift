@@ -12,6 +12,7 @@ class ProductGourpCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     var productList:[Product] = []
+    var didSelectItemCollectionView:((Int)->())?
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.register(ProductCell.self)
@@ -50,6 +51,12 @@ extension ProductGourpCell:UICollectionViewDelegate,UICollectionViewDataSource ,
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 172, height: 255)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let didSelectItemCollectionView = didSelectItemCollectionView else {
+            return
+        }
+        didSelectItemCollectionView(indexPath.row)
     }
 }
 

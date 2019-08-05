@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="1Bp-YZ-lnl" customClass="ColorCell" customModule="Tasheel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AA-cI-FdT">
+                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7AA-cI-FdT" secondAttribute="trailing" id="6TC-C7-zgV"/>
+                <constraint firstItem="7AA-cI-FdT" firstAttribute="leading" secondItem="1Bp-YZ-lnl" secondAttribute="leading" id="7xR-A8-XcF"/>
+                <constraint firstAttribute="bottom" secondItem="7AA-cI-FdT" secondAttribute="bottom" id="A0m-4F-wLD"/>
+                <constraint firstItem="7AA-cI-FdT" firstAttribute="centerX" secondItem="1Bp-YZ-lnl" secondAttribute="centerX" id="BGN-rz-Qwy"/>
+                <constraint firstItem="7AA-cI-FdT" firstAttribute="top" secondItem="1Bp-YZ-lnl" secondAttribute="top" id="Ogi-bV-80d"/>
+                <constraint firstItem="7AA-cI-FdT" firstAttribute="centerY" secondItem="1Bp-YZ-lnl" secondAttribute="centerY" id="diY-iG-U2L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fh8-4A-D67"/>
+            <size key="customSize" width="48" height="48"/>
+            <connections>
+                <outlet property="view_bg" destination="7AA-cI-FdT" id="cU0-mU-QbE"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="52.901785714285715"/>
+        </collectionViewCell>
+    </objects>
+</document>
