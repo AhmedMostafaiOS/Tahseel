@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tasheel/ViewControllers/ListViewController.swift"
-            timestampString = "586732734.2079819"
+            timestampString = "586765190.058285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tasheel/ViewControllers/DetailViewController.swift"
-            timestampString = "586732734.2081701"
+            timestampString = "586765190.058393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "Buy(_:)"
             landmarkType = "7">
          </BreakpointContent>

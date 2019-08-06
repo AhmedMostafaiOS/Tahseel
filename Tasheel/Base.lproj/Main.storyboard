@@ -728,8 +728,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivh-nM-bdN">
-                                                <rect key="frame" x="274" y="333" width="88" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="287.5" y="333" width="74.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.4941176471" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -815,6 +815,17 @@
                                                     <outlet property="delegate" destination="y1L-vb-I8m" id="umh-CL-7N9"/>
                                                 </connections>
                                             </collectionView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktD-ey-LO7">
+                                                <rect key="frame" x="338" y="233" width="18" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="18" id="FfO-J9-gMB"/>
+                                                    <constraint firstAttribute="height" constant="22" id="lyb-W9-uMl"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_favorite_stroke"/>
+                                                <connections>
+                                                    <action selector="Favorite:" destination="y1L-vb-I8m" eventType="touchUpInside" id="3SJ-yV-Cgn"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -831,6 +842,7 @@
                                             <constraint firstItem="MMS-FM-R1Q" firstAttribute="top" secondItem="gR5-CW-cGp" secondAttribute="bottom" constant="18" id="BLB-kd-kRF"/>
                                             <constraint firstAttribute="trailing" secondItem="MMS-FM-R1Q" secondAttribute="trailing" id="CCh-K8-t7h"/>
                                             <constraint firstItem="VrW-KV-xU3" firstAttribute="top" secondItem="KHA-E5-DVn" secondAttribute="bottom" constant="16" id="CR5-iI-LxE"/>
+                                            <constraint firstItem="ktD-ey-LO7" firstAttribute="top" secondItem="Vwg-M8-I5f" secondAttribute="bottom" constant="25" id="DVu-Li-mqO"/>
                                             <constraint firstItem="zm7-za-J0r" firstAttribute="leading" secondItem="p6M-A6-Qab" secondAttribute="leading" constant="16" id="DXL-g8-yPK"/>
                                             <constraint firstItem="MaD-Ho-Ukx" firstAttribute="top" secondItem="7b6-9J-zNf" secondAttribute="bottom" constant="16" id="HdM-Qj-340"/>
                                             <constraint firstItem="Xus-gC-OOW" firstAttribute="top" secondItem="IwX-DJ-dw7" secondAttribute="bottom" constant="25.5" id="JEk-ul-wm4"/>
@@ -861,6 +873,7 @@
                                             <constraint firstItem="Vwg-M8-I5f" firstAttribute="leading" secondItem="p6M-A6-Qab" secondAttribute="leading" constant="8" id="lOR-QZ-sqd"/>
                                             <constraint firstAttribute="trailing" secondItem="Vwg-M8-I5f" secondAttribute="trailing" constant="8" id="qXW-7R-k2Q"/>
                                             <constraint firstItem="KHA-E5-DVn" firstAttribute="leading" secondItem="p6M-A6-Qab" secondAttribute="leading" constant="50" id="rJ1-yT-ddm"/>
+                                            <constraint firstAttribute="trailing" secondItem="ktD-ey-LO7" secondAttribute="trailing" constant="19" id="rMc-d5-wNT"/>
                                             <constraint firstItem="Xus-gC-OOW" firstAttribute="top" secondItem="MJL-lu-IGF" secondAttribute="bottom" constant="18" id="rpq-cc-QLR"/>
                                             <constraint firstItem="Vwg-M8-I5f" firstAttribute="top" secondItem="p6M-A6-Qab" secondAttribute="top" constant="8" id="s17-Vb-p3x"/>
                                             <constraint firstItem="KHA-E5-DVn" firstAttribute="top" secondItem="6uI-Qe-Fjs" secondAttribute="bottom" constant="12" id="sgT-O1-lCs"/>
@@ -924,6 +937,7 @@
                         <outlet property="buyNowButton" destination="0Wk-07-quB" id="SYO-1T-vJa"/>
                         <outlet property="colorCollectionView" destination="MaD-Ho-Ukx" id="X0w-Vs-Z94"/>
                         <outlet property="descriptionLabel" destination="gR5-CW-cGp" id="yAk-UO-OcH"/>
+                        <outlet property="favorite" destination="ktD-ey-LO7" id="lb4-LI-5po"/>
                         <outlet property="imageSlider" destination="Vwg-M8-I5f" id="dTj-W6-Z5B"/>
                         <outlet property="nameLabel" destination="Pna-FV-nja" id="hmf-MX-jzV"/>
                         <outlet property="newPriceLabel" destination="Au9-3D-VC8" id="0BJ-ke-C53"/>
@@ -960,6 +974,7 @@
         <scene sceneID="K9F-qC-4La">
             <objects>
                 <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="xJh-KX-SeT" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dkL-X6-ewo">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -981,6 +996,7 @@
         <image name="back" width="22" height="10"/>
         <image name="cencel" width="29" height="29"/>
         <image name="ic_facebook" width="50" height="35"/>
+        <image name="ic_favorite_stroke" width="18" height="18"/>
         <image name="ic_twitter" width="50" height="35"/>
         <image name="view" width="19" height="13"/>
     </resources>

@@ -59,7 +59,25 @@ class NavigationbarItemsViewController: UIViewController, UNUserNotificationCent
         self.navigationController?.navigationBar.addSubview(label)
         self.navigationController?.navigationBar.isTranslucent = false
     }
-  
+    func updateImageToLabelWithoutLeft(message:String, width:Float = 120) {
+        for item in navigationController?.navigationBar.subviews ?? [] {
+            if item.isKind(of: UIImageView.self) ||  item.isKind(of: UILabel.self) {
+                item.removeFromSuperview()
+            }
+        }
+        let labelSize:CGSize = CGSize(width:Int(width), height:22);
+        let width = self.navigationController?.navigationBar.frame.width ?? 0
+        let marginX:CGFloat = (width / 2) - (labelSize.width / 2);
+        let label = UILabel()
+        label.text = message
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 17.0)
+        label.frame = CGRect(x:marginX, y:10, width:labelSize.width, height:labelSize.height);
+        self.navigationItem.leftBarButtonItem  = nil
+        self.navigationController?.navigationBar.addSubview(label)
+        self.navigationController?.navigationBar.isTranslucent = false
+    }
+    
     func defualtNaviagtion() {
         self.navigationItem.setRightBarButtonItems([], animated: true)
         self.navigationItem.setLeftBarButtonItems([], animated: true)

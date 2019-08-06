@@ -21,9 +21,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addCartButton: UIButton!
     @IBOutlet weak var buyNowButton: UIButton!
-    let colorList:[UIColor] = [#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1) , #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) , #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1) , #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1) , #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)]
+    let colorList:[UIColor] = [#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1) , #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) , #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1) , #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1) , #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1) , #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1) ,  #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)]
     let sizeList:[String] = ["S" , "M" , "L" , "XL" , "XLL"]
     let imageList:[UIImage] = [#imageLiteral(resourceName: "3") , #imageLiteral(resourceName: "4") , #imageLiteral(resourceName: "1")]
+    
+    @IBOutlet weak var favorite: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         colorCollectionView.register(ColorCell.self)
@@ -32,6 +34,11 @@ class DetailViewController: UIViewController {
         imageSlider.delegate = self
         imageSlider.dataSource = self
         addCartButton.isHidden = true
+    }
+    
+    
+    @IBAction func Favorite(_ sender: Any) {
+        favorite.setImage(favorite.imageView?.image == #imageLiteral(resourceName: "ic_favorite_fill") ? #imageLiteral(resourceName: "ic_favorite_stroke") : #imageLiteral(resourceName: "ic_favorite_fill"), for: .normal)
     }
     
     @IBAction func Buy(_ sender: Any) {
@@ -70,6 +77,8 @@ extension DetailViewController:UICollectionViewDelegate,UICollectionViewDataSour
         }
         let cell:SizeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.titleLabel.text = sizeList[indexPath.row]
+        cell.layer.cornerRadius = 10
+
         return cell
        
     }

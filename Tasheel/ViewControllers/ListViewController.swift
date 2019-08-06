@@ -19,7 +19,7 @@ class ListViewController: NavigationbarItemsViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateImageToLabel(message: "Product List")
+        updateImageToLabelWithoutLeft(message: "Product List")
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
