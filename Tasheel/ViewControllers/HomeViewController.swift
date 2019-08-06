@@ -38,11 +38,14 @@ class HomeViewController: NavigationbarItemsViewController {
         productList.append(Product.init(name: "Woman T-Shirt", salary: "$ 24.00", image: #imageLiteral(resourceName: "3")))
         productGroupList.append(ProductGroup.init(title: "Best Sell", productList:productList ))
     }
+  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setToolbarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
         updateImageToLabel(message: "Home")
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
-         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 }
 extension HomeViewController:UITableViewDelegate,UITableViewDataSource {

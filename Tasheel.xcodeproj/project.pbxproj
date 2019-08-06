@@ -15,6 +15,7 @@
 		D104D4CD22F8B393002580A0 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104D4CC22F8B393002580A0 /* SizeCell.swift */; };
 		D106375722F8091F0042FD07 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106375622F8091F0042FD07 /* TextField.swift */; };
 		D106375E22F83F3F0042FD07 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106375D22F83F3E0042FD07 /* ListViewController.swift */; };
+		D10801FE22F9C13B0020748A /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10801FD22F9C13B0020748A /* CartViewController.swift */; };
 		D108769622F6B0EB00ADDC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769522F6B0EB00ADDC69 /* AppDelegate.swift */; };
 		D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108769722F6B0EB00ADDC69 /* SplashViewController.swift */; };
 		D108769B22F6B0EB00ADDC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D108769922F6B0EB00ADDC69 /* Main.storyboard */; };
@@ -33,6 +34,11 @@
 		D1B5990F22F9666900059AF1 /* QuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B5990D22F9666900059AF1 /* QuantityView.xib */; };
 		D1B5991122F9675D00059AF1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B5991022F9675D00059AF1 /* View.swift */; };
 		D1B5991322F9681C00059AF1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B5991222F9681C00059AF1 /* CustomButton.swift */; };
+		D1F9AB7322F9F1C8004428B8 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9AB7222F9F1C8004428B8 /* Address.swift */; };
+		D1F9AB7522F9F229004428B8 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9AB7422F9F229004428B8 /* Cart.swift */; };
+		D1F9AB7822F9F2D8004428B8 /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1F9AB7722F9F2D8004428B8 /* CartCell.xib */; };
+		D1F9AB7A22F9F2EE004428B8 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9AB7922F9F2EE004428B8 /* CartCell.swift */; };
+		D1F9AB7C22FA11BD004428B8 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9AB7B22FA11BD004428B8 /* FinishViewController.swift */; };
 		D1FAA02E22F75FB5001455D9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA02D22F75FB5001455D9 /* AuthService.swift */; };
 		D1FAA03722F767A2001455D9 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */; };
 		D1FAA03822F767A2001455D9 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */; };
@@ -82,6 +88,7 @@
 		D104D4CC22F8B393002580A0 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
 		D106375622F8091F0042FD07 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		D106375D22F83F3E0042FD07 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D10801FD22F9C13B0020748A /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D108769222F6B0EB00ADDC69 /* Tasheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D108769522F6B0EB00ADDC69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D108769722F6B0EB00ADDC69 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +113,11 @@
 		D1B5990D22F9666900059AF1 /* QuantityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuantityView.xib; sourceTree = "<group>"; };
 		D1B5991022F9675D00059AF1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		D1B5991222F9681C00059AF1 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D1F9AB7222F9F1C8004428B8 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		D1F9AB7422F9F229004428B8 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		D1F9AB7722F9F2D8004428B8 /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
+		D1F9AB7922F9F2EE004428B8 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		D1F9AB7B22FA11BD004428B8 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		D1FAA02D22F75FB5001455D9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
 		D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
@@ -259,6 +271,8 @@
 				D1FAA05D22F77FF7001455D9 /* MenuViewController.swift */,
 				D106375D22F83F3E0042FD07 /* ListViewController.swift */,
 				D104D4C722F8B277002580A0 /* DetailViewController.swift */,
+				D10801FD22F9C13B0020748A /* CartViewController.swift */,
+				D1F9AB7B22FA11BD004428B8 /* FinishViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +300,8 @@
 				D1FAA04B22F76BE6001455D9 /* Category.swift */,
 				D1FAA05322F77372001455D9 /* Product.swift */,
 				D1FAA05A22F77619001455D9 /* ProductGroup.swift */,
+				D1F9AB7222F9F1C8004428B8 /* Address.swift */,
+				D1F9AB7422F9F229004428B8 /* Cart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +313,15 @@
 				D1B5990D22F9666900059AF1 /* QuantityView.xib */,
 			);
 			path = QuantityView;
+			sourceTree = "<group>";
+		};
+		D1F9AB7622F9F2CA004428B8 /* CartCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1F9AB7722F9F2D8004428B8 /* CartCell.xib */,
+				D1F9AB7922F9F2EE004428B8 /* CartCell.swift */,
+			);
+			path = CartCell;
 			sourceTree = "<group>";
 		};
 		D1FAA02F22F76772001455D9 /* Resourses */ = {
@@ -363,6 +388,7 @@
 		D1FAA04D22F7709B001455D9 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				D1F9AB7622F9F2CA004428B8 /* CartCell */,
 				D1FAA05F22F78048001455D9 /* SideMenuCell */,
 				D1FAA04E22F770A3001455D9 /* ProductGourpCell */,
 			);
@@ -506,6 +532,7 @@
 				D1FAA04822F76A49001455D9 /* CategoryCell.xib in Resources */,
 				D10876A322F6B0ED00ADDC69 /* LaunchScreen.storyboard in Resources */,
 				D1FAA05722F773ED001455D9 /* ProductCell.xib in Resources */,
+				D1F9AB7822F9F2D8004428B8 /* CartCell.xib in Resources */,
 				D104D4C422F8A9B6002580A0 /* ColorCell.xib in Resources */,
 				D104D4CB22F8B31D002580A0 /* SizeCell.xib in Resources */,
 				D1B5990F22F9666900059AF1 /* QuantityView.xib in Resources */,
@@ -598,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1FAA05422F77372001455D9 /* Product.swift in Sources */,
+				D1F9AB7A22F9F2EE004428B8 /* CartCell.swift in Sources */,
 				D1FAA03C22F767A2001455D9 /* UIViewControllerExtensions.swift in Sources */,
 				D1B5991122F9675D00059AF1 /* View.swift in Sources */,
 				D154C0FA22F7105700503C98 /* SignUpViewController.swift in Sources */,
@@ -606,6 +634,7 @@
 				D1FAA03722F767A2001455D9 /* CollectionViewExtensions.swift in Sources */,
 				D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */,
 				D154C0F622F7103E00503C98 /* ChooseViewController.swift in Sources */,
+				D1F9AB7322F9F1C8004428B8 /* Address.swift in Sources */,
 				D1FAA04122F76915001455D9 /* HomeViewController.swift in Sources */,
 				D106375E22F83F3F0042FD07 /* ListViewController.swift in Sources */,
 				D104D4C822F8B277002580A0 /* DetailViewController.swift in Sources */,
@@ -624,7 +653,10 @@
 				D1FAA02E22F75FB5001455D9 /* AuthService.swift in Sources */,
 				D154C10722F721BA00503C98 /* User.swift in Sources */,
 				D1FAA05922F77528001455D9 /* ProductCell.swift in Sources */,
+				D1F9AB7C22FA11BD004428B8 /* FinishViewController.swift in Sources */,
 				D104D4CD22F8B393002580A0 /* SizeCell.swift in Sources */,
+				D1F9AB7522F9F229004428B8 /* Cart.swift in Sources */,
+				D10801FE22F9C13B0020748A /* CartViewController.swift in Sources */,
 				D154C0FF22F71CC400503C98 /* Helper.swift in Sources */,
 				D1FAA03822F767A2001455D9 /* TableViewExtensions.swift in Sources */,
 				D1FAA06322F78096001455D9 /* SideMenuCell.swift in Sources */,
@@ -806,6 +838,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S727WZ5BQT;
 				INFOPLIST_FILE = Tasheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -825,6 +858,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S727WZ5BQT;
 				INFOPLIST_FILE = Tasheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

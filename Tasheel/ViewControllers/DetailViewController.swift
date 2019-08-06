@@ -41,7 +41,19 @@ class DetailViewController: UIViewController {
     
     
     @IBAction func Favorite(_ sender: Any) {
+        alert(message: favorite.imageView?.image == #imageLiteral(resourceName: "ic_favorite_fill") ? "Remove Favorite Successfully" : "Add Favorite Successfully",title: "",completion: {
+            
+        })
         favorite.setImage(favorite.imageView?.image == #imageLiteral(resourceName: "ic_favorite_fill") ? #imageLiteral(resourceName: "ic_favorite_stroke") : #imageLiteral(resourceName: "ic_favorite_fill"), for: .normal)
+    }
+    
+    @IBAction func AddCart(_ sender: Any) {
+        alert(message: "Add Successfully",title: "",completion: {
+           
+        })
+        addCartButton.isHidden = buyNowButton.titleLabel?.text ?? "" == "Buy Now" ? false : true
+        buyNowButton.setTitle(addCartButton.isHidden ? "Buy Now":"Cancel", for: .normal)
+
     }
     
     @IBAction func Buy(_ sender: Any) {

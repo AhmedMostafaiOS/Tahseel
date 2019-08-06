@@ -58,7 +58,10 @@ extension MenuViewController:UITableViewDelegate,UITableViewDataSource {
             break
         case 2:
             //My Cart
+            let vc = Helper.initViewControllerWith(identifier: "CartViewController", and: "") as! CartViewController
+            self.show(vc, sender: nil)
             break
+            
         case 3:
             //Favorite
             break

@@ -24,6 +24,12 @@ class NavigationbarItemsViewController: UIViewController, UNUserNotificationCent
         self.navigationItem.setRightBarButtonItems([filterItem], animated: true)
         self.navigationItem.setLeftBarButton(menuItem, animated: true)
     }
+    func defultNavigationWithButtons()  {
+        filterItem = createButtonItem(buttonImage: #imageLiteral(resourceName: "filter"), targetAction:  #selector(filter))
+        menuItem = createButtonItem(buttonImage: #imageLiteral(resourceName: "Menu Bar"), targetAction: #selector(showMenu))
+        self.navigationItem.setRightBarButtonItems([filterItem], animated: true)
+        self.navigationItem.setLeftBarButton(menuItem, animated: true)
+    }
     
     @objc func dismissSearch() {
         navigationController?.popViewController(animated: true)

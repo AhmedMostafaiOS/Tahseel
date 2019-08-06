@@ -9,6 +9,7 @@
 import UIKit
 struct Product {
     var name:String
+    
     var salary:String
     var image:UIImage
 }
