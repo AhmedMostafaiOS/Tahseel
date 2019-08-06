@@ -29,6 +29,10 @@
 		D154C0FF22F71CC400503C98 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C0FE22F71CC400503C98 /* Helper.swift */; };
 		D154C10122F7208100503C98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D154C10022F7208100503C98 /* GoogleService-Info.plist */; };
 		D154C10722F721BA00503C98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154C10622F721BA00503C98 /* User.swift */; };
+		D1B5990E22F9666900059AF1 /* QuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B5990C22F9666900059AF1 /* QuantityView.swift */; };
+		D1B5990F22F9666900059AF1 /* QuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B5990D22F9666900059AF1 /* QuantityView.xib */; };
+		D1B5991122F9675D00059AF1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B5991022F9675D00059AF1 /* View.swift */; };
+		D1B5991322F9681C00059AF1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B5991222F9681C00059AF1 /* CustomButton.swift */; };
 		D1FAA02E22F75FB5001455D9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA02D22F75FB5001455D9 /* AuthService.swift */; };
 		D1FAA03722F767A2001455D9 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */; };
 		D1FAA03822F767A2001455D9 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */; };
@@ -98,6 +102,10 @@
 		D154C0FE22F71CC400503C98 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D154C10022F7208100503C98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D154C10622F721BA00503C98 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1B5990C22F9666900059AF1 /* QuantityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityView.swift; sourceTree = "<group>"; };
+		D1B5990D22F9666900059AF1 /* QuantityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuantityView.xib; sourceTree = "<group>"; };
+		D1B5991022F9675D00059AF1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		D1B5991222F9681C00059AF1 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D1FAA02D22F75FB5001455D9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D1FAA03122F767A2001455D9 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
 		D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
@@ -282,6 +290,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D1B5990B22F9666900059AF1 /* QuantityView */ = {
+			isa = PBXGroup;
+			children = (
+				D1B5990C22F9666900059AF1 /* QuantityView.swift */,
+				D1B5990D22F9666900059AF1 /* QuantityView.xib */,
+			);
+			path = QuantityView;
+			sourceTree = "<group>";
+		};
 		D1FAA02F22F76772001455D9 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +316,7 @@
 				D1FAA03222F767A2001455D9 /* TableViewExtensions.swift */,
 				D1FAA03622F767A2001455D9 /* UIViewControllerExtensions.swift */,
 				D106375622F8091F0042FD07 /* TextField.swift */,
+				D1B5991022F9675D00059AF1 /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,6 +324,8 @@
 		D1FAA03D22F76871001455D9 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				D1B5991222F9681C00059AF1 /* CustomButton.swift */,
+				D1B5990B22F9666900059AF1 /* QuantityView */,
 				D1FAA03E22F76894001455D9 /* NavigationbarItemsViewController.swift */,
 			);
 			path = CustomView;
@@ -488,6 +508,7 @@
 				D1FAA05722F773ED001455D9 /* ProductCell.xib in Resources */,
 				D104D4C422F8A9B6002580A0 /* ColorCell.xib in Resources */,
 				D104D4CB22F8B31D002580A0 /* SizeCell.xib in Resources */,
+				D1B5990F22F9666900059AF1 /* QuantityView.xib in Resources */,
 				D1FAA06122F78055001455D9 /* SideMenuCell.xib in Resources */,
 				D154C10122F7208100503C98 /* GoogleService-Info.plist in Resources */,
 				D1FAA04322F769FB001455D9 /* Assets.xcassets in Resources */,
@@ -578,8 +599,10 @@
 			files = (
 				D1FAA05422F77372001455D9 /* Product.swift in Sources */,
 				D1FAA03C22F767A2001455D9 /* UIViewControllerExtensions.swift in Sources */,
+				D1B5991122F9675D00059AF1 /* View.swift in Sources */,
 				D154C0FA22F7105700503C98 /* SignUpViewController.swift in Sources */,
 				D106375722F8091F0042FD07 /* TextField.swift in Sources */,
+				D1B5990E22F9666900059AF1 /* QuantityView.swift in Sources */,
 				D1FAA03722F767A2001455D9 /* CollectionViewExtensions.swift in Sources */,
 				D108769822F6B0EB00ADDC69 /* SplashViewController.swift in Sources */,
 				D154C0F622F7103E00503C98 /* ChooseViewController.swift in Sources */,
@@ -591,6 +614,7 @@
 				D104D4C622F8A9F1002580A0 /* ColorCell.swift in Sources */,
 				D154C0FC22F717C600503C98 /* BaseViewController.swift in Sources */,
 				D1FAA05B22F77619001455D9 /* ProductGroup.swift in Sources */,
+				D1B5991322F9681C00059AF1 /* CustomButton.swift in Sources */,
 				D108769622F6B0EB00ADDC69 /* AppDelegate.swift in Sources */,
 				D1FAA03F22F76895001455D9 /* NavigationbarItemsViewController.swift in Sources */,
 				D1FAA05222F77296001455D9 /* ProductGourpCell.swift in Sources */,
